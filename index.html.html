@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Image</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 100%;
+            padding: 10px;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        map {
+            display: block;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <img src="tesimage.png" alt="Image" usemap="#imageMap">
+    </div>
+
+    <map name="imageMap">
+        <!-- Clickable area at x=1041, y=646 -->
+        <area shape="rect" coords="1031,636,1051,656" href="point1.html" alt="Point 1">
+        <!-- Clickable area at x=848, y=456 -->
+        <area shape="rect" coords="838,446,858,466" href="point2.html" alt="Point 2">
+    </map>
+
+</body>
+</html>
+
